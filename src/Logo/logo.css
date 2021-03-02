@@ -1,0 +1,22 @@
+.Tilt {
+  background: linear-gradient(to right, rgb(0, 163, 215), rgb(255, 242, 213));
+  background: linear-gradient(to right, rgb(3, 162, 188), rgb(32, 220, 169));
+}
+.rotate {
+  height: 170;
+  width: 170;
+  animation-duration: 1.75s;
+  animation-name: flip;
+  animation-iteration-count: infinite;
+  /* animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0); */
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(180deg);
+  }
+}
